@@ -1,0 +1,57 @@
+
+#formRegister, #formLogin {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid rgb(150,150,150);
+    box-shadow: 0px 4px 12px black
+}
+#listQuizz {
+    display: flex;
+    justify-content: space-around
+}
+#listQuizz div {
+    border: 1px solid rgb(150,150,150);
+    box-shadow: 0px 4px 12px black;
+    height: 200px;
+    width: 30%;
+    padding: 20px;
+    cursor: pointer
+}
+#Quizz {
+    border: 1px solid rgb(150,150,150);
+    box-shadow: 0px 4px 12px black;
+    padding: 20px;
+}
+#Quizz button {
+    height: 50px;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black
+}
+#Quizz button:hover {
+    background-color: grey
+}
+#Quizz #questions p {
+    height: 50px;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.4rem
+}
+.hidden {
+    display: none!important
+}
+.goodAnswer {
+    background-color: green!important;
+}
+.falseAnswer {
+    background-color: red!important;
+}
