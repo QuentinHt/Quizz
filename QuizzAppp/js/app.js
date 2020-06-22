@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Déclarations
     
     const apiUrl = 'http://localhost:6985';
-    //const apiKey = '26ba3a9f856e448c89d75f73c7022e19';
 
     // Form Register
     
@@ -28,15 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scoreQuizz = document.querySelector('#score span');
     const anecdote = document.querySelector('#anecdote');
     
-    // Fonctions
-        
-    // S'inscrire
-//     new FETCHrequest(`${apiUrl}/users`, 'GET').fetch().then(fetchData => {
-// console.log(fetchData)
-//     })
-//     .catch( fetchError => {
-//         console.error(fetchError)
-//     })
+   // Fonctions
 
     registerForm.addEventListener('submit', event => {
         event.preventDefault();
@@ -200,7 +191,8 @@ document.addEventListener('DOMContentLoaded', () => {
         anecdote.innerHTML = '';
     }, 4000);
             });
-        }
+        };
+
     };
 
     const nextQuestion = (quest, response, count, score) => {
@@ -248,7 +240,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 4000)
 
             });
-        }
+        };
+        // setTimeout(() => {
+        //     console.log()
+        //     count ++;
+        //     nextQuestion(quest, response, count, score);
+        // }, 5000)
     };
 
     const randomInt = (min, max) => {
